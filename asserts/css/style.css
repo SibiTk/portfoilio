@@ -26,6 +26,14 @@ header{
     align-items: center;
 }
 
+header .logo {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 ul {
     display: flex;
     list-style-type: none;
@@ -36,7 +44,7 @@ ul li {
 }
 
 ul li a{
-    color: #fff;
+    color:white;
     text-decoration: none;
     
 }
@@ -56,6 +64,7 @@ header button {
 
 header button:hover {
   cursor: pointer;
+  background-color: var(--primary);
+  color:white;
 }
 
-}
