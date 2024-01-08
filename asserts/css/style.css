@@ -1,13 +1,16 @@
 
 
  
-  body {
+  body  {
     font-family: 'Roboto', sans-serif;
   }
+
+  
   /* global variable */
   :root{
     --dark-primary:#1b1f24;
     --primary:#12bdff;
+    --primary-hover:#29718d;
   }
 
 *{
@@ -16,15 +19,7 @@
     box-sizing: border-box;
 
 }
-header{
-    background-color:var(--dark-primary) ;
-    padding:10px 20px;
-    color: #fff;
 
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
 
 header .logo {
   color: var(--primary);
@@ -34,22 +29,23 @@ header .logo {
   text-decoration: none;
 }
 
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     
 }
-ul li {
+header ul li {
     margin-right: 30px;
+    font-weight: bold;
 }
 
-ul li a{
+header ul li a{
     color:white;
     text-decoration: none;
     
 }
 
-ul li a:hover {
+header ul li a:hover {
   color: var(--primary);
 }
 /* header > buttons */
@@ -68,3 +64,79 @@ header button:hover {
   color:white;
 }
 
+/* section:home page */
+section.model-section {
+  background-color: var(--dark-primary);
+color: #fff;
+display:flex;
+align-items: center;
+padding: 20px 30px 0px 30px;
+justify-content: space-around ;
+}
+.model-section__tittle {
+  font-size: 50px;
+  font-weight: 700;
+  color: #12bdff;
+  
+}
+
+.model-section__place {
+  font-size: 34px;
+
+}
+
+.social-icons li  {
+ margin-right: 15px;
+ margin-top: 15px;
+  
+}
+
+ul.social-icons  {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-icons li >a {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+
+.social-icons li > a :hover {
+
+  color: #12bdff;
+}
+
+/* button */
+.btn {
+margin: 10px 10px 0px 0px;
+border-radius: 5px;
+cursor: pointer;
+padding: 5px 4px;
+
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  font-weight: 700;
+  color: #160404;
+}
+
+.btn.btn-primary:hover {
+  color: var(--primary);
+background-color: var(--dark-primary);
+border-color:  var(--primary);
+border
+}
+
+
+/* header button */
+header{
+  
+ padding:10px 20px;
+color:#fff;
+background-color: var(--dark-primary);
+display: flex;
+ justify-content:space-around;
+ align-items: center;
+}
